@@ -13,7 +13,7 @@ import joblib
 #Doron Schwartz, Week 7, 10/30/23
 # local function to load downloaded data
 def load_data():
-    data_folder = "/Users/doronschwartz/YCCS/Schwartz_Doron_800590794/AppliedML/IEE/data"
+    data_folder = "/Users/doronschwartz/YCCS/AppliedML/IEEE/data"
     train_transaction = pd.read_csv(data_folder + "/train_transaction.csv")
     train_identity = pd.read_csv(data_folder + "/train_transaction.csv")
     return train_transaction, train_identity
