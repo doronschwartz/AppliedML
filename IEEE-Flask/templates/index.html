@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Fraud Prediction</title>
+</head>
+<body>
+    <h1>Transaction Fraud Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="transaction_amt">Transaction Amount:</label>
+        <input type="text" id="transaction_amt" name="TransactionAmt" required><br><br>
+
+        <label for="card4">Card Type (card4):</label>
+        <select id="card4" name="card4">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="discover">Discover</option>
+            <option value="americanexpress">American Express</option>
+        </select><br><br>
+
+        <label for="card6">Card Category (card6):</label>
+        <select id="card6" name="card6">
+            <option value="credit">Credit</option>
+            <option value="debit">Debit</option>
+            <option value="chargecard">Charge Card</option>
+            <option value="debitofcredit">Debit of Credit</option>
+        </select><br><br>
+
+        <label for="p_emaildomain">P Email Domain:</label>
+        <input type="text" id="p_emaildomain" name="P_emaildomain" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
